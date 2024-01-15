@@ -1,0 +1,549 @@
+{
+    "preguntas": [
+      {
+        "id": 1,
+        "pregunta": "¿Qué método de API se utiliza para recuperar información de un servidor sin realizar ningún cambio en los datos?",
+        "opciones": [
+          {"texto": "Patch", "correcta": false},
+          {"texto": "Post", "correcta": false},
+          {"texto": "Put", "correcta": false},
+          {"texto": "Get", "correcta": true}
+        ]
+      },
+      {
+        "id": 2,
+        "pregunta": "Qué devolvería un llamado correcto pero sin información?",
+        "opciones": [
+          {"texto": "204", "correcta": true},
+          {"texto": "203", "correcta": false},
+          {"texto": "500", "correcta": false},
+          {"texto": "200", "correcta": false}
+        ]
+      },
+      {
+        "id": 3,
+        "pregunta": "Qué devolvería un llamado correcto pero donde el servidor incurre en un timeout?",
+        "opciones": [
+          {"texto": "500", "correcta": false},
+          {"texto": "504", "correcta": true},
+          {"texto": "503", "correcta": false},
+          {"texto": "400", "correcta": false}
+        ]
+      },
+      {
+        "id": 4,
+        "pregunta": "Qué devolvería un llamado donde no se encuentra el recurso solicitado?",
+        "opciones": [
+          {"texto": "200", "correcta": false},
+          {"texto": "204", "correcta": false},
+          {"texto": "400", "correcta": false},
+          {"texto": "404", "correcta": true}
+        ]
+      },
+      {
+        "id": 5,
+        "pregunta": "Cuál es el valor de retorno para Versión HTTP no soportada?",
+        "opciones": [
+          {"texto": "505", "correcta": true},
+          {"texto": "504", "correcta": false},
+          {"texto": "500", "correcta": false},
+          {"texto": "503", "correcta": false}
+        ]
+      },
+      {
+        "id": 6,
+        "pregunta": "¿Qué método debería ocupar un API si necesitamos actualizar parcialmente un registro?",
+        "opciones": [
+          {"texto": "Put", "correcta": false},
+          {"texto": "Update", "correcta": false},
+          {"texto": "Post", "correcta": false},
+          {"texto": "Patch", "correcta": true}
+        ]
+      },
+      {
+        "id": 7,
+        "pregunta": "Es un mecanismo basado en encabezados HTTP que permite a un servidor indicar cualquier origen distinto del propio desde el cual un navegador tendría permitido utilizar recursos",
+        "opciones": [
+          {"texto": "HTTP REQUEST", "correcta": false},
+          {"texto": "CROSS", "correcta": false},
+          {"texto": "NAT", "correcta": false},
+          {"texto": "CORS", "correcta": true}
+        ]
+      },
+      {
+        "id": 8,
+        "pregunta": "Cuál es el resultado del siguiente código?\nconsole.log([,,,,].length);",
+        "opciones": [
+          {"texto": "null", "correcta": false},
+          {"texto": "0", "correcta": false},
+          {"texto": "4", "correcta": true},
+          {"texto": "NaN", "correcta": false}
+        ]
+      },
+      {
+        "id": 9,
+        "pregunta": "Cuál es la salida en consola del siguiente código?\nconst writer = {\n  name: \"Juan Rulfo\",\n  country: \"Mexico\"\n};\nconst anotherWriter = writer;\nanotherWriter.name = \"Manuel Hernandez\";\nconsole.log(writer.name);",
+        "opciones": [
+          {"texto": "error", "correcta": false},
+          {"texto": "\"Manuel Hernandez\"", "correcta": true},
+          {"texto": "\"\"", "correcta": false},
+          {"texto": "\"Juan Rulfo\"", "correcta": false}
+        ]
+      },
+      {
+        "id": 10,
+        "pregunta": "Cuál es la salida en consola del siguiente código?\nconst writer = {\n  name: \"Juan Rulfo\",\n  country: \"Mexico\"\n};\nlet anotherWriter = {...writer};\nanotherWriter.name = \"Manuel Hernandez\";\nconsole.log(writer.name);",
+        "opciones": [
+          {"texto": "error", "correcta": false},
+          {"texto": "\"\"", "correcta": false},
+          {"texto": "\"Manuel Hernandez\"", "correcta": false},
+          {"texto": "\"Juan Rulfo\"", "correcta": true}
+        ]
+      },
+      {
+        "id": 11,
+        "pregunta": "Cuál es el resultado del siguiente código?\nconst algo = {\nnombre: 'juan',\nadress: {\ncalle:'nose'\n}\n}\nlet pedro = algo.musica;\nconsole.log(pedro);",
+        "opciones": [
+          {"texto": "\"\"", "correcta": false},
+          {"texto": "undefined", "correcta": true},
+          {"texto": "error", "correcta": false},
+          {"texto": "null", "correcta": false}
+        ]
+      },
+      {
+        "id": 12,
+        "pregunta": "Cuál es el resultado del siguiente código?\nconst example = {};\nObject.hasOwn(example, ‘prop’);",
+        "opciones": [
+          {"texto": "undefined", "correcta": false},
+          {"texto": "false", "correcta": true},
+          {"texto": "null", "correcta": false},
+          {"texto": "true", "correcta": false}
+        ]
+      },
+      {
+        "id": 13,
+        "pregunta": "Cuál es el resultado del siguiente código?\nlet x = 1 + (+'1');\nconsole.log(x);",
+        "opciones": [
+          {"texto": "1+'1'", "correcta": false},
+          {"texto": "error", "correcta": false},
+          {"texto": "2", "correcta": true},
+          {"texto": "11", "correcta": false}
+        ]
+      },
+      {
+        "id": 14,
+        "pregunta": "Cuál es el resultado del siguiente código?\nconst foo = null ?? 'default string';\nconsole.log(foo);",
+        "opciones": [
+          {"texto": "'default string'", "correcta": true},
+          {"texto": "undefined", "correcta": false},
+          {"texto": "null", "correcta": false},
+          {"texto": "??", "correcta": false}
+        ]
+      },
+      {
+        "id": 15,
+        "pregunta": "Cuál es el resultado del siguiente código?\nconst baz = 0 ?? 42;\nconsole.log(baz);",
+        "opciones": [
+          {"texto": "042", "correcta": false},
+          {"texto": "false", "correcta": false},
+          {"texto": "0", "correcta": true},
+          {"texto": "42", "correcta": false}
+        ]
+      },
+      {
+        "id": 16,
+        "pregunta": "Cuál es el resultado del siguiente código?\nconst a = 8 > 2;\nconst b = 2 > 8;\nconst c = a && b;\nconsole.log(c);",
+        "opciones": [
+          {"texto": "false, true", "correcta": false},
+          {"texto": "true", "correcta": false},
+          {"texto": "true, false", "correcta": false},
+          {"texto": "false", "correcta": true}
+        ]
+      },
+      {
+        "id": 17,
+        "pregunta": "Cuál es el resultado del siguiente código?\nlet title = {};\ntitle ||= 'default value';\nconsole.log(title);",
+        "opciones": [
+          {"texto": "{}", "correcta": true},
+          {"texto": "'default value'", "correcta": false},
+          {"texto": "undefined", "correcta": false},
+          {"texto": "false", "correcta": false}
+        ]
+      },
+      {
+        "id": 18,
+        "pregunta": "Cuál es el resultado en pantalla del siguiente código?\n\nlet fruits = ['piedra','manzana','chayote'];\n\nlet [fruta1, fruta2] = fruits;\n\n\n\nconsole.log(fruta1, fruta2);\n",
+        "opciones": [
+          {"texto": "‘piedra’,'manzana','chayote',  'piedra','manzana','chayote'", "correcta": false},
+          {"texto": "‘piedra','manzana'", "correcta": true},
+          {"texto": "'manzana','chayote'", "correcta": false},
+          {"texto": "error", "correcta": false}
+        ]
+      },
+      {
+        "id": 19,
+        "pregunta": "Cuál es el resultado en pantalla del siguiente código?\n\nlet fruits = ['piedra','manzana','chayote'];\n\nlet {fruta1, fruta2} = fruits;\n\n\n\nconsole.log(fruta1);\n",
+        "opciones": [
+          {"texto": "‘piedra’,'manzana','chayote',  'piedra','manzana','chayote'", "correcta": false},
+          {"texto": "'piedra'", "correcta": false},
+          {"texto": "undefined", "correcta": true},
+          {"texto": "error", "correcta": false}
+        ]
+      },
+      {
+        "id": 20,
+        "pregunta": "Cuál es el resultado del siguiente código?\n\nconst example = {};\nObject.hasOwn(example, ‘prop’);\n",
+        "opciones": [
+          {"texto": "''", "correcta": false},
+          {"texto": "false", "correcta": true},
+          {"texto": "undefined", "correcta": false},
+          {"texto": "null", "correcta": false}
+        ]
+      },
+      {
+        "id": 21,
+        "pregunta": "Cuál es el resultado del siguiente código?\n\nconst example = {\n\n  prop1: 1,\n\n  prop2: 2,\n\n};\n\nObject.hasOwn(example, ‘prop1’);\n",
+        "opciones": [
+          {"texto": "true", "correcta": true},
+          {"texto": "1", "correcta": false},
+          {"texto": "yes", "correcta": false},
+          {"texto": "false", "correcta": false}
+        ]
+      },
+      {
+        "id": 22,
+        "pregunta": "Cuál es el resultado en pantalla del siguiente código?\n\nlet chars = ['a', 'b', 'c', 'd', 'e'];\n\nlet [char1, char2, char3, ...rest] = chars;\n\n\n\nconsole.log(rest);\n",
+        "opciones": [
+          {"texto": "[ , , , 'd', 'e']", "correcta": false},
+          {"texto": "d, e", "correcta": false},
+          {"texto": "[d, e]", "correcta": true},
+          {"texto": "a, b, c, [d, e]", "correcta": false}
+        ]
+      },
+      {
+        "id": 23,
+        "pregunta": "Cuál es el resultado en pantalla del siguiente código?\n\nlet myPrototype = {\n\n  prop1: 'a',\n\n  prop2: 1,\n\n  prop3: 'b',\n\n};\n\n\n\nlet myObjDesc = Object.create(myPrototype);\n\nconsole.log(myObjDesc);\n",
+        "opciones": [
+          {"texto": "‘a’, 1, ‘b’", "correcta": false},
+          {"texto": "{ prop1: 'a',  prop2: 1,  prop3: 'b' }", "correcta": false},
+          {"texto": "undefined", "correcta": false},
+          {"texto": "{}", "correcta": true}
+        ]
+      },
+      {
+        "id": 24,
+        "pregunta": "Cuál es el resultado en pantalla del siguiente código?\n\nlet myObjDesc = Object.create();\n\nconsole.log(myObjDesc);\n",
+        "opciones": [
+          {"texto": "null", "correcta": false},
+          {"texto": "{}", "correcta": false},
+          {"texto": "error", "correcta": true},
+          {"texto": "undefined", "correcta": false}
+        ]
+      },
+      {
+        "id": 25,
+        "pregunta": "Cuál es el resultado de éste código?\nlet obj = {\n\n    name: 'Juan',\n\n    year: 12,  \n\n};\n\nconst street = obj.adress ?. street;\n\nconsole.log(street);\n",
+        "opciones": [
+          {"texto": "null", "correcta": false},
+          {"texto": "undefined", "correcta": true},
+          {"texto": "street", "correcta": false},
+          {"texto": "Uncaught ReferenceError: street is not defined", "correcta": false}
+        ]
+      },
+      {
+        "id": 26,
+        "pregunta": "Como se declara un atributo privado en una clase js ?\n\n",
+        "opciones": [
+          {"texto": "static attribute", "correcta": false},
+          {"texto": "#attribute", "correcta": true},
+          {"texto": "no se puede declarar un atributo en js", "correcta": false},
+          {"texto": "private attribute", "correcta": false}
+        ]
+      },
+      {
+        "id": 27,
+        "pregunta": "Cuál es el resultado del siguiente código?\n\nlet box = {\n    height: 10,\n    width: 20,\n    color: 'Red',\n};\n\nlet style = {\n    color: 'Blue',\n    borderStyle: 'solid'\n};\n\nlet styleBox = Object.assign({}, style, box);  \n\nconsole.log(styleBox.color);\n",
+        "opciones": [
+          {"texto": "Red", "correcta": true},
+          {"texto": "Blue", "correcta": false},
+          {"texto": "Blue Red", "correcta": false},
+          {"texto": "error", "correcta": false}
+        ]
+      },
+      {
+        "id": 28,
+        "pregunta": "¿Para usar el método await es necesario declarar una función como asíncrona?",
+        "opciones": [
+          {"texto": "Verdadero", "correcta": true},
+          {"texto": "Falso", "correcta": false}
+        ]
+      },
+      {
+        "id": 29,
+        "pregunta": "Cuál es el resultado del siguiente código?\n\n```javascript\nfunction promess(value, timeOut) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => {\n      resolve(value * value);\n    }, timeOut);\n    if (typeof value !== \"number\") new Promise(reject(`El valor insertado es diferente de un número`));\n  });\n}\n\nlet myPromiseAll = Promise.all([promess(1, 4000), promess(2, 1000), promess(3, 3000), promess('p', 5000)])\n  .then(() => {\n    console.log('Se terminaron de ejecutar todas las promesas');\n  })\n  .catch((err) => {\n    console.error(`${err}`);\n  });\n```\n",
+        "opciones": [
+          {"texto": "'Se terminaron de ejecutar todas las promesas'", "correcta": false},
+          {"texto": "'El valor insertado es diferente de un número'", "correcta": true},
+          {"texto": "error", "correcta": false},
+          {"texto": "[1, 4, 9, 'El valor insertado es diferente de un número']", "correcta": false}
+        ]
+      },
+      {
+        "id": 30,
+        "pregunta": "Cuál es el resultado del siguiente código?\n\n```javascript\nfunction promess(value, timeOut) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => {\n      resolve(value * value);\n    }, timeOut);\n    if (typeof value !== \"number\") new Promise(reject(`El valor insertado es diferente de un número`));\n  });\n}\n\nlet myPromiseRace = Promise.race([promess(1, 4000), promess(2, 10000), promess(3, 3000)])\n  .then((value) => {\n    console.log(value)\n  });\n```\n",
+        "opciones": [
+          {"texto": "4", "correcta": false},
+          {"texto": "[1, 4, 9]", "correcta": false},
+          {"texto": "1", "correcta": false},
+          {"texto": "9", "correcta": true}
+        ]
+      },
+      {
+        "id": 31,
+        "pregunta": "Cuál es el resultado de este código?\n\n```javascript\nconst myPromise = new Promise(function(myResolve, myReject) {\n  setTimeout(function(){ myResolve(\"promise 1\"); }, 2000);\n});\n\nconst myPromise2 = new Promise(function(myResolve, myReject) {\n  setTimeout(function(){ myResolve(\"promise 2\"); }, 1000);\n});\n\nmyPromise.then(result => {\n  console.log(result);\n  myPromise2.then(result2 => {\n    console.log(result2);\n  });\n});\n```\n",
+        "opciones": [
+          {"texto": "[ “promise 1”, “promise 2” ]", "correcta": false},
+          {"texto": "[ “promise 2”, “promise 1” ]", "correcta": false},
+          {"texto": "promise 1  promise 2", "correcta": true},
+          {"texto": "promise 2  promise 1", "correcta": false}
+        ]
+      },
+      {
+        "id": 32,
+        "pregunta": "Cuál es el resultado de este código?\n\n```javascript\nconst myPromise = new Promise(function(myResolve, myReject) {\n  setTimeout(function(){ myResolve(\"promise 1\"); }, 2000);\n});\n\nconst myPromise2 = new Promise(function(myResolve, myReject) {\n  setTimeout(function(){ myResolve(\"promise 2\"); }, 1000);\n});\n\nPromise.all([myPromise, myPromise2]).then(values => {\n  console.log(values);\n});\n```\n",
+        "opciones": [
+          {"texto": "promise 2  promise 1", "correcta": false},
+          {"texto": "[ “promise 2”, “promise 1” ]", "correcta": false},
+          {"texto": "promise 1  promise 2", "correcta": false},
+          {"texto": "[ “promise 1”, “promise 2” ]", "correcta": true}
+        ]
+      },
+      {
+        "id": 33,
+        "pregunta": "Qué elementos se seleccionan en el siguiente código?\ndocument.querySelector('#container').querySelectorAll(div.myClass > p);\n",
+        "opciones": [
+          {"texto": "Todos los elementos <p> dentro de <div> con la clase myClass dentro del elemento con el id ‘container’", "correcta": true},
+          {"texto": "Todos los elementos <p> dentro de <div> con la clase ‘myClass’", "correcta": false},
+          {"texto": "Todos los elementos diferentes a <p> dentro de <div> con la clase myClass dentro del elemento con el id ‘container’", "correcta": false},
+          {"texto": "Todos los elementos <p> con la clase ‘myClass’ dentro de <div> dentro del elemento con el id ‘container’", "correcta": false}
+        ]
+      },
+      {
+        "id": 34,
+        "pregunta": "Qué implementación no devuelve error?\nreturn html`condicion ?  html`<p>`: nothing`\nreturn html`condicion ?  html`<p>`: ''`\nreturn html`condicion ?  html`<p>`: null`\nreturn html`condicion ?  html`<p>`: `\n",
+        "opciones": [
+          {"texto": "1, 2, 3", "correcta": true},
+          {"texto": "Ninguna", "correcta": false},
+          {"texto": "Todas", "correcta": false},
+          {"texto": "2, 3", "correcta": false}
+        ]
+      },
+      {
+        "id": 35,
+        "pregunta": "Qué implementación no devuelve error?\n<my-component>persons=\"`${['juan','Pedro']}`\"</my-component>\n<my-component>persons=\"${JSON.parse(['juan’, ’Pedro’])}\"</my-component>\n<my-component>persons=\"${['juan','Pedro']}\"</my-component>\n",
+        "opciones": [
+          {"texto": "1", "correcta": true},
+          {"texto": "Ninguna", "correcta": false},
+          {"texto": "2, 3", "correcta": false},
+          {"texto": "Todas", "correcta": false}
+        ]
+      },
+      {
+        "id": 36,
+        "pregunta": "En el ciclo de vida de lit, ¿updateCompleted se ejecuta antes que updated?",
+        "opciones": [
+          {"texto": "falso", "correcta": true},
+          {"texto": "verdadero", "correcta": false}
+        ]
+      },
+      {
+        "id": 37,
+        "pregunta": "En el ciclo de vida de lit, ¿firstUpdated se ejecuta antes que updated?",
+        "opciones": [
+          {"texto": "verdadero", "correcta": true},
+          {"texto": "falso", "correcta": false}
+        ]
+      },
+      {
+        "id": 38,
+        "pregunta": "Si a una propiedad no se le especifica una función hasChanged, ¿cuál es la comparación por default que se utiliza?",
+        "opciones": [
+          {"texto": "oldVal !== newVal", "correcta": false},
+          {"texto": "newVal !== oldVal", "correcta": true},
+          {"texto": "oldVal != newVal", "correcta": false},
+          {"texto": "newVal != oldVal", "correcta": false}
+        ]
+      },
+      {
+        "id": 39,
+        "pregunta": "¿Cuál de los siguientes NO es un beneficio de trabajar con el shadowDOM?",
+        "opciones": [
+          {"texto": "Encapsulación", "correcta": true},
+          {"texto": "Composición", "correcta": false},
+          {"texto": "Style Scooping", "correcta": false},
+          {"texto": "DOM Scooping", "correcta": false}
+        ]
+      },
+      {
+        "id": 40,
+        "pregunta": "¿Cuál es la descripción correcta?\nthis.dispatchEvent(\n  new CustomEvent(‘my-event ', {\n    bubbles: true,\n    composed: true,\n    detail: { message: “some happed” }\n  }),\n);\n",
+        "opciones": [
+          {"texto": "Se guarda en la constante my-event con el contenido “some happed”", "correcta": false},
+          {"texto": "Se dispara un evento my-event con el contenido detail", "correcta": false},
+          {"texto": "Se crea un objeto en el contenido detail", "correcta": false},
+          {"texto": "Se dispara un evento my-event con message “some happed”", "correcta": true}
+        ]
+      },
+      {
+        "id": 41,
+        "pregunta": "¿Para qué sirve la propiedad reflect?",
+        "opciones": [
+          {"texto": "Como atributos y viceversa", "correcta": false},
+          {"texto": "Para reflejar el valor de la propiedad al componente padre", "correcta": false},
+          {"texto": "Para invertir el valor de propiedades a atributos y viceversa", "correcta": false},
+          {"texto": "Para reflejar el valor de propiedades a atributos y viceversa", "correcta": true}
+        ]
+      },
+      {
+        "id": 42,
+        "pregunta": "¿Cuál es el tipo de dato de nothing?",
+        "opciones": [
+          {"texto": "undefined", "correcta": false},
+          {"texto": "Todas las anteriores", "correcta": false},
+          {"texto": "Symbol", "correcta": true},
+          {"texto": "null", "correcta": false}
+        ]
+      },
+      {
+        "id": 43,
+        "pregunta": "¿En qué parte se inicializa una propiedad?",
+        "opciones": [
+          {"texto": "constructor", "correcta": true},
+          {"texto": "properties", "correcta": false},
+          {"texto": "render", "correcta": false},
+          {"texto": "firstUpdate", "correcta": false}
+        ]
+      },
+      {
+        "id": 44,
+        "pregunta": "¿Directiva que puede implementarse con lit?",
+        "opciones": [
+          {"texto": "svg", "correcta": false},
+          {"texto": "where", "correcta": false},
+          {"texto": "filter", "correcta": false},
+          {"texto": "ifDefined", "correcta": true}
+        ]
+      },
+      {
+        "id": 45,
+        "pregunta": "¿Este método es llamado cada vez que se asigna valor a una propiedad?",
+        "opciones": [
+          {"texto": "render", "correcta": false},
+          {"texto": "hasChanged", "correcta": true},
+          {"texto": "updateCompleted", "correcta": false},
+          {"texto": "updated", "correcta": false}
+        ]
+      },
+      {
+        "id": 46,
+        "pregunta": "¿Qué es Lit?",
+        "opciones": [
+          {"texto": "Web components", "correcta": false},
+          {"texto": "Una librería", "correcta": true},
+          {"texto": "Custom elements", "correcta": false},
+          {"texto": "Un framework", "correcta": false}
+        ]
+      },
+      {
+        "id": 47,
+        "pregunta": "¿Cuál es el formato correcto del siguiente objeto en un archivo Json?\n\nlet person = {\n\n    name: \"juan Rulfo\",\n\n    domicile: {\n\n        country : \"Mexico\",\n\n        city : \"cdmx\",\n\n        telephone: [5524362, 55423162]\n\n    }\n\n}\n",
+        "opciones": [
+          {"texto": "{\"name\":\"juan Rulfo\",\"domicile\":{\"country\":\"Mexico\",\"city\":\"cdmx\",\"telephone\":[5524362,55423162]}}", "correcta": true},
+          {"texto": "{\"name\";\"juan Rulfo\",\"domicile\";{\"country\";\"Mexico\",\"city\";\"cdmx\",\"telephone\";[5524362,55423162]}}", "correcta": false},
+          {"texto": "{\"name\",\"juan Rulfo\",\"domicile\":{\"country\",\"Mexico\",\"city\",\"cdmx\",\"telephone\":[5524362,55423162]}}", "correcta": false},
+          {"texto": "[{\"name\":\"juan Rulfo\",\"domicile\":{\"country\":\"Mexico\",\"city\":\"cdmx\",\"telephone\":[5524362,55423162]}}]", "correcta": false}
+        ]
+      },
+      {
+        "id": 48,
+        "pregunta": "¿CUÁL ES LA MANERA DE CONVERTIR UN JSON EN UN OBJETO DE JAVASCRIPT?",
+        "opciones": [
+          {"texto": "let obj = JSON.parse(json)", "correcta": true},
+          {"texto": "let obj = JSON.stringify(json)", "correcta": false},
+          {"texto": "let obj = Object.parse(json)", "correcta": false},
+          {"texto": "let obj = Object.convert(json)", "correcta": false}
+        ]
+      },
+      {
+        "id": 49,
+        "pregunta": "¿CUÁL ES LA MANERA DE CONVERTIR UN OBJETO DE JAVASCRIPT EN JSON?",
+        "opciones": [
+          {"texto": "let obj = JSON.stringify(json)", "correcta": true},
+          {"texto": "let obj = JSON.parse(json)", "correcta": false},
+          {"texto": "let obj = Object.convert(json)", "correcta": false},
+          {"texto": "let obj = Object.parse(json)", "correcta": false}
+        ]
+      },
+      {
+        "id": 50,
+        "pregunta": "Cuál es el resultado de éste código?\nconst writer = {\n  name: \"Juan Rulfo\",\n  country: \"Mexico\"\n};\nconsole.log(JSON.stringify(Object.entries(writer)));",
+        "opciones": [
+          {"texto": "[{\"name\":\"Juan Rulfo\", \"country\":\"Mexico\"}]", "correcta": false},
+          {"texto": "{\"name\":\"Juan Rulfo\", \"country\":\"Mexico\"}", "correcta": false},
+          {"texto": "[[\"name\",\"Juan Rulfo\"], [\"country\",\"Mexico\"]]", "correcta": true},
+          {"texto": "[\"name\":\"Juan Rulfo\"], [\"country\":\"Mexico\"]", "correcta": false}
+        ]
+      },
+      {
+        "id": "51",
+        "pregunta": "Patrón estructural de diseño que agrega un objeto dentro de otros encapsulados compartiendo funcionalidad.",
+        "opciones": [
+          {"texto": "Bridge", "correcta": false},
+          {"texto": "Singleton", "correcta": false},
+          {"texto": "Decorator", "correcta": true},
+          {"texto": "Adapter", "correcta": false}
+        ]
+      },
+      {
+        "id": "52",
+        "pregunta": "Es una solución general reutilizable y que aplica a diferentes problemas cuando desarrollamos software",
+        "opciones": [
+          {"texto": "Programación Funcional", "correcta": false},
+          {"texto": "Programación Orientada a Objetos", "correcta": false},
+          {"texto": "Herencia", "correcta": false},
+          {"texto": "Patrón de Diseños", "correcta": true}
+        ]
+      },
+      {
+        "id": "53",
+        "pregunta": "Tipos de polimorfismo",
+        "opciones": [
+          {"texto": "Sobrecarga, condicional, jerárquico", "correcta": false},
+          {"texto": "Sobrecarga paramétrico, redefinición", "correcta": true},
+          {"texto": "Derivado, encapsulado, privado", "correcta": false},
+          {"texto": "Hereditario, refinado", "correcta": false}
+        ]
+      },
+      {
+        "id": "54",
+        "pregunta": "EN ESTE OBJETO CUAL PROPIEDAD DEBE SER ENCAPSULADA\n\nfunction Person(nombre, fechaNacimiento, edad, genero) {\n\n  this.nombre = nombre;\n\n  this.fechaNamcimiento = fechaNacimiento;\n\n  this.edad = edad;\n\n  this.genero = genero;\n\n}",
+        "opciones": [
+          {"texto": "Genero", "correcta": false},
+          {"texto": "Nombre", "correcta": false},
+          {"texto": "Fecha de Nacimiento", "correcta": false},
+          {"texto": "Edad", "correcta": true}
+        ]
+      },
+      {
+        "id": "55",
+        "pregunta": "CUANDO UNA CLASE ES CREADA A PARTIR DE 2 O MÁS CLASES PARA REFINAR SUS MÉTODOS Y PROPIEDADES ESTAMOS HABLANDO DE",
+        "opciones": [
+          {"texto": "Instancias", "correcta": false},
+          {"texto": "Encapsulamiento", "correcta": false},
+          {"texto": "Polimorfismo", "correcta": false},
+          {"texto": "Herencia", "correcta": true}
+        ]
+      }
+    ]
+  }
+  

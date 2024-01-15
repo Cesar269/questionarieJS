@@ -1,0 +1,28 @@
+{
+  "name": "questionariejs",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Un proyecto elaborado con el fin de repasar los conceptos clave que componen a JS y LitElement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --open --watch",
+    "build": "rm -rf dist && tsc && rollup -c rollup.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@jridgewell/sourcemap-codec": "^1.4.15",
+    "@web/dev-server": "^0.3.1",
+    "instead": "^1.0.3",
+    "lit": "^2.8.0",
+    "rimraf": "^5.0.5",
+    "rollup-plugin-minify-html-literals": "^1.2.6"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.9.4",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
